@@ -1,4 +1,5 @@
 ﻿/*jeu du unombre cache*/
+
 using System;
 
 namespace NombreCache
@@ -8,6 +9,7 @@ namespace NombreCache
 
         static int essai;
 
+        /* Création d'un module pour simplifié et aére le code */
         static void saisie()
         {
             bool correct = false;
@@ -29,11 +31,11 @@ namespace NombreCache
         static void Main(string[] args)
         {
 
-            // déclaration
+            /* déclaration des variables*/
             int valeur = 0, nbre = 1;
             essai = 0;
             bool correct = false;
-            // saisie du nombre à chercher
+            /* saisie du nombre à chercher*/
             while (!correct)
             {
                 try
@@ -48,12 +50,14 @@ namespace NombreCache
                 }
             }
             Console.Clear();
-            // saisie du premier essai
+
+            /*saisie du premier essai en appellant le module "saisie"*/
             saisie();
-            // boucle sur les essais
+
+            /* boucle sur les essais*/
             while (essai != valeur)
             {
-                // test de l'essai par rapport à la valeur à chercher
+                /* test de l'essai par rapport à la valeur à chercher*/
                 if (essai > valeur)
                 {
                     Console.WriteLine(" --> trop grand !");
@@ -62,12 +66,16 @@ namespace NombreCache
                 {
                     Console.WriteLine(" --> trop petit !");
                 }
-                // saisie d'un nouvel essai
+
+                /*saisie d'un nouvel essai en appellant encore une fois le module "saisie"*/
                 saisie();
-                // compteur d'essais
+
+                /*compteur d'essais*/
                 nbre++;
+
             }
-            // valeur trouvée
+
+            /*valeur trouvée*/
             Console.WriteLine("Vous avez trouvé en "+nbre+" fois !");
             Console.ReadLine();
         }
