@@ -9,7 +9,7 @@ namespace NombreCache
 
         static int essai;
 
-        /* Création d'un module pour simplifié et aére le code */
+        /* Création d'un module pour simplifié et aére donc eviter la repetition de code */
         static void saisie()
         {
             bool correct = false;
