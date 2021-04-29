@@ -6,7 +6,7 @@ namespace NombreCache
 {
     class Program
     {
-
+        /*lets goooooooooooooo00000000000000000000000000000000000000000000000000000000000*/
         static int essai;
 
         /* Création d'un module pour simplifié et aére donc eviter la repetition de code */
@@ -19,7 +19,7 @@ namespace NombreCache
                 try
                 {
                     Console.Write("Entrez un essai = ");
-                    nombre = int.Parse(Console.ReadLine());
+                     nombre = int.Parse(Console.ReadLine());
                     correct = true;
                 }
                 catch
