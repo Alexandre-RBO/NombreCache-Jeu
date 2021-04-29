@@ -10,15 +10,16 @@ namespace NombreCache
         static int essai;
 
         /* Création d'un module pour simplifié et aére donc eviter la repetition de code */
-        static void saisie()
+        static int saisie()
         {
+            int nombre = 0;
             bool correct = false;
             while (!correct)
             {
                 try
                 {
                     Console.Write("Entrez un essai = ");
-                    essai = int.Parse(Console.ReadLine());
+                    nombre = int.Parse(Console.ReadLine());
                     correct = true;
                 }
                 catch
@@ -26,6 +27,7 @@ namespace NombreCache
                     Console.WriteLine("Erreur de saisie : saisissez une nombre entier");
                 }
             }
+            return nombre;
         }
 
         static void Main(string[] args)
